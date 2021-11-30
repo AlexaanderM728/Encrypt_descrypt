@@ -26,7 +26,7 @@ while True:
     if choice not in ['1', '2']:
         break
 
-    file_path = '/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/Encrypt_descrypt/test/*.txt'
+    file_path = 'test/*.txt'
 
     key = "test_passkey"  # input("key: ")
 
