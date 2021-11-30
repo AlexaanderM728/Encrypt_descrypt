@@ -37,7 +37,7 @@ while True:
     if choice == '3':
         exit(0)
     if choice == '1':
-        for file in glob.glob("/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/Encrypt_descrypt/test/*.txt"):
+        for file in glob.glob("test/*.txt"):
              with open(file, "r+") as f:
                 nonce, ciphertext, tag = encrypt(f.read())
                 ciphertext_tab.append(ciphertext)
@@ -50,7 +50,7 @@ while True:
 
     if choice == '2':
         i = 0
-        for file in glob.glob("/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/Encrypt_descrypt/test/*.txt"):
+        for file in glob.glob("test/*.txt"):
             with open(file, "r+") as f:
                 nonce = nonce_tab[i]
                 tag = tag_tab[i]
