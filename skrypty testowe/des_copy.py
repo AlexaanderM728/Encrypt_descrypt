@@ -22,7 +22,7 @@ while True:
     if operation not in ['1', '2']:
         break
 
-    root_dir = '/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/test/'
+    root_dir = '/test/'
     end_dir = input("input path text:")
     file_path = root_dir + end_dir
 

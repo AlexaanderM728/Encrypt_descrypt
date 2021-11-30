@@ -17,14 +17,14 @@ def descryptall(file_path):
         output_file.write(new_file_bytes)
 
 while True:
-    print('choose of the following operations: \n\t 1 -Encrypt\n\t 2- Decrypt \n 3- exit')
+    print('choose of the following operations: \n1-Encrypt\n2-Decrypt\n3-exit')
     choice = input("Your choice: ")
     if choice == '3':
         exit(0)
     if choice not in ['1', '2']:
         break
 
-    root_dir = '/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/test/'
+    root_dir = '/test/'
     end_dir =  '*.txt' #input("input path text:")
     file_path = root_dir + end_dir
 
