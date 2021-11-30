@@ -5,6 +5,6 @@ while True:
     if choice == '3':
         exit(0)
     if choice == '1':
-        os.system('python des.py')
+        os.system('python DES3.py')
     if choice == '2':
         os.system('python aes_en.py')
