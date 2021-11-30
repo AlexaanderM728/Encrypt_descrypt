@@ -57,6 +57,5 @@ while True:
                 ciphertext = ciphertext_tab[i]
                 plaintext = decrypt(nonce, ciphertext , tag)
                 f.truncate()
-                print(plaintext)
                 f.write(plaintext)
                 i+= 1
