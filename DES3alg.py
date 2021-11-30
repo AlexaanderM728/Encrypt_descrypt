@@ -1,3 +1,5 @@
+#Zuzanna Borkowska (s21243)
+#Aleksnader Mazurek (s15023)
 import glob
 from Crypto.Cipher import DES3
 from hashlib import md5
@@ -24,11 +26,9 @@ while True:
     if choice not in ['1', '2']:
         break
 
-    root_dir = '/test/'
-    end_dir =  '*.txt' #input("input path text:")
-    file_path = root_dir + end_dir
+    file_path = '/Users/Alex/Desktop/BSI2/PY/TEXTVIRUS310/Encrypt_descrypt/test/*.txt'
 
-    key = "test_passkey"  # input("encrypted key: ")
+    key = "test_passkey"  # input("key: ")
 
     key_hash = md5(key.encode('ascii')).digest()  # 16bit hask
     tdes_key = DES3.adjust_key_parity(key_hash)
